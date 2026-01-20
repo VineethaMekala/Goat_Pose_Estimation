@@ -49,6 +49,7 @@ The model was trained with these keypoints in the given order:
 |    11 | front_hoof2   |
 |    12 | back_hoof1    |
 |    13 | back_hoof2    |
+
 Important:
 This keypoint order MUST match how the dataset was labeled during training.
 

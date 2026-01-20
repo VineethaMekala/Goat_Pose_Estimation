@@ -29,7 +29,7 @@ pip install ultralytics opencv-python
 ```
 
 
-**## 2) Keypoints Used in Training (Order)**
+## 2) Keypoints Used in Training (Order)
 
 The model was trained with these keypoints in the given order:
 
@@ -52,38 +52,26 @@ The model was trained with these keypoints in the given order:
 Important:
 This keypoint order MUST match how the dataset was labeled during training.
 
-**##3) Skeleton Connections (Lines)**
+## 3) Skeleton Connections (Lines)
 
 The skeleton is drawn by connecting keypoints using these pairs:
 
 nose → left_ear, right_ear
-
 left_ear → neck
-
 right_ear → neck
-
 neck → hip
-
 hip → tail
-
 neck → front_knee1
-
 neck → front_knee2
-
 front_knee1 → front_hoof1
-
 front_knee2 → front_hoof2
-
 hip → back_knee1
-
 hip → back_knee2
-
 back_knee1 → back_hoof1
-
 back_knee2 → back_hoof2
 
 The code defines skeleton as:
-
+```bash
 skeleton = [
     (0, 1),   # nose → left_ear
     (0, 2),   # nose → right_ear
@@ -106,15 +94,16 @@ skeleton = [
     (6, 12),  # back_knee1 → back_hoof1
     (7, 13)   # back_knee2 → back_hoof2
 ]
+```
 
-
-**## 4) How to Run Inference (Testing)**
-**## Run using VS Code Terminal**
+## 4) How to Run Inference (Testing)
+## Run using VS Code Terminal
 
 Open VS Code terminal and go to project folder:
-
+```bash
 cd path/to/GoatPoseRun
 python Testing_code.py
+```
 
 Output:
 A window will open showing:
@@ -123,23 +112,19 @@ index numbers for each keypoint
 skeleton lines between keypoints
 Press q to quit.
 
-**## 5) Testing Script (Testing_code.py)**
+## 5) Testing Script (Testing_code.py)
 
 The script:
 
 Loads model (Goat_Pose_best.pt)
-
 Opens input video (Goat_Video.mp4)
-
 Runs pose inference on each frame
-
 Draws keypoints + numbers
-
 Draws skeleton lines using OpenCV
-
 Shows output window
 
-**## 6) Adjust Output Window Size**
-
+## 6) Adjust Output Window Size
+```bash
 Inside the script you can change:
 OUTPUT_W, OUTPUT_H = 1000, 650
+```

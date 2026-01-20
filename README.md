@@ -26,7 +26,8 @@ Install packages:
 
 ```bash
 pip install ultralytics opencv-python
-exit'''
+```
+
 
 **## 2) Keypoints Used in Training (Order)**
 

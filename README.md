@@ -113,7 +113,7 @@ index numbers for each keypoint
 skeleton lines between keypoints
 Press q to quit.
 
-## 5) Testing Script (Testing_code.py)
+## 5) Testing Script (Inference_code.py)
 
 The script:
 

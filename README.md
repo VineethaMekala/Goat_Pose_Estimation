@@ -98,9 +98,9 @@ skeleton = [
 ```
 
 ## 4) How to Run Inference (Testing)
-## Run using VS Code Terminal
+## To Run this
 
-Open VS Code terminal and go to project folder:
+Open terminal and go to project folder:
 ```bash
 cd path/to/GoatPoseRun
 python Testing_code.py
